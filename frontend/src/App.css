@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --main-background: #000000;
+    --theme-btn-bg: #ffffff;
+    --text-color: #ffffff;
+    --text-color-2: #121212;
+}
+
+[data-theme="light"] {
+
+    --main-background: #ffffff;
+    --theme-btn-bg: #121212;
+    --text-color: #121212;
+    --text-color-2: #ffffff;
+}
+
+
+.App {
+    min-height: 100vh;
+    background: var(--main-background);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.App .theme-btn{
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-btn-bg);
+    color: var(--text-color-2);
+}
