@@ -3,6 +3,7 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "mongodb": "^6.15.0",
+    "mongoose": "^8.13.2",
     "node": "^23.11.0",
     "nodemon": "^3.1.9"
   },
@@ -10,7 +11,9 @@
   "version": "1.0.0",
   "description": "A Modern AI Project which will use OpenAI API To Crate An Real-Time Chatbot similar to ChatGPT. The application stores User's Chats In a Database to keep track of conversations, but a user can delete them anytime. The UI is capable of showing code blocks if requested by the User.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Harish Gurjar",
